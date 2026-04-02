@@ -15,7 +15,7 @@ pub const ENUM_MIN_BOARD_TYPE: u16 = 0;
 pub const ENUM_MAX_BOARD_TYPE: u16 = 250;
 #[deprecated(since = "2.0.0", note = "Use associated constants instead. This will no longer be generated in 2021.")]
 #[allow(non_camel_case_types)]
-pub const ENUM_VALUES_BOARD_TYPE: [BoardType; 28] = [
+pub const ENUM_VALUES_BOARD_TYPE: [BoardType; 29] = [
   BoardType::UNKNOWN,
   BoardType::SLIMEVR_LEGACY,
   BoardType::SLIMEVR_DEV,
@@ -43,6 +43,7 @@ pub const ENUM_VALUES_BOARD_TYPE: [BoardType; 28] = [
   BoardType::GENERIC_NRF,
   BoardType::SLIMEVR_BUTTERFLY_DEV,
   BoardType::SLIMEVR_BUTTERFLY,
+  BoardType::SOMATICVR_ORION,
   BoardType::DEV_RESERVED,
 ];
 
@@ -78,6 +79,7 @@ impl BoardType {
   pub const GENERIC_NRF: Self = Self(24);
   pub const SLIMEVR_BUTTERFLY_DEV: Self = Self(25);
   pub const SLIMEVR_BUTTERFLY: Self = Self(26);
+  pub const SOMATICVR_ORION: Self = Self(27);
   pub const DEV_RESERVED: Self = Self(250);
 
   pub const ENUM_MIN: u16 = 0;
@@ -110,6 +112,7 @@ impl BoardType {
     Self::GENERIC_NRF,
     Self::SLIMEVR_BUTTERFLY_DEV,
     Self::SLIMEVR_BUTTERFLY,
+    Self::SOMATICVR_ORION,
     Self::DEV_RESERVED,
   ];
   /// Returns the variant's name or "" if unknown.
@@ -142,6 +145,7 @@ impl BoardType {
       Self::GENERIC_NRF => Some("GENERIC_NRF"),
       Self::SLIMEVR_BUTTERFLY_DEV => Some("SLIMEVR_BUTTERFLY_DEV"),
       Self::SLIMEVR_BUTTERFLY => Some("SLIMEVR_BUTTERFLY"),
+      Self::SOMATICVR_ORION => Some("SOMATICVR_ORION"),
       Self::DEV_RESERVED => Some("DEV_RESERVED"),
       _ => None,
     }

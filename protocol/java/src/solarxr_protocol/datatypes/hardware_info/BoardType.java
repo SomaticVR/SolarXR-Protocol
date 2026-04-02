@@ -32,6 +32,7 @@ public final class BoardType {
   public static final int GENERIC_NRF = 24;
   public static final int SLIMEVR_BUTTERFLY_DEV = 25;
   public static final int SLIMEVR_BUTTERFLY = 26;
+  public static final int SOMATICVR_ORION = 27;
   public static final int DEV_RESERVED = 250;
 }
 

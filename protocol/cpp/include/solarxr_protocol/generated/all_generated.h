@@ -1113,12 +1113,13 @@ enum class BoardType : uint16_t {
   GENERIC_NRF = 24,
   SLIMEVR_BUTTERFLY_DEV = 25,
   SLIMEVR_BUTTERFLY = 26,
+  SOMATICVR_ORION = 27,
   DEV_RESERVED = 250,
   MIN = UNKNOWN,
   MAX = DEV_RESERVED
 };
 
-inline const BoardType (&EnumValuesBoardType())[28] {
+inline const BoardType (&EnumValuesBoardType())[29] {
   static const BoardType values[] = {
     BoardType::UNKNOWN,
     BoardType::SLIMEVR_LEGACY,
@@ -1147,6 +1148,7 @@ inline const BoardType (&EnumValuesBoardType())[28] {
     BoardType::GENERIC_NRF,
     BoardType::SLIMEVR_BUTTERFLY_DEV,
     BoardType::SLIMEVR_BUTTERFLY,
+    BoardType::SOMATICVR_ORION,
     BoardType::DEV_RESERVED
   };
   return values;
@@ -1181,6 +1183,7 @@ inline const char *EnumNameBoardType(BoardType e) {
     case BoardType::GENERIC_NRF: return "GENERIC_NRF";
     case BoardType::SLIMEVR_BUTTERFLY_DEV: return "SLIMEVR_BUTTERFLY_DEV";
     case BoardType::SLIMEVR_BUTTERFLY: return "SLIMEVR_BUTTERFLY";
+    case BoardType::SOMATICVR_ORION: return "SOMATICVR_ORION";
     case BoardType::DEV_RESERVED: return "DEV_RESERVED";
     default: return "";
   }

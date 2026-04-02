@@ -32,6 +32,7 @@ class BoardType private constructor() {
         const val GENERICNRF: UShort = 24u
         const val SLIMEVRBUTTERFLYDEV: UShort = 25u
         const val SLIMEVRBUTTERFLY: UShort = 26u
+        const val SOMATICVRORION: UShort = 27u
         const val DEVRESERVED: UShort = 250u
     }
 }
